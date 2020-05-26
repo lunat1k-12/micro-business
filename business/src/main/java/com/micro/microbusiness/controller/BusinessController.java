@@ -1,7 +1,8 @@
 package com.micro.microbusiness.controller;
 
+import com.micro.microbusiness.dto.BusinessAreaDTO;
 import com.micro.microbusiness.entity.BusinessArea;
-import com.micro.microbusiness.repository.BusinessAreaRepository;
+import com.micro.microbusiness.service.BusinessService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,15 +17,17 @@ import java.util.List;
 @RequiredArgsConstructor
 public class BusinessController {
 
-    private final BusinessAreaRepository repo;
+    private final BusinessService service;
 
     @PostMapping()
-    public BusinessArea addArea(@RequestBody BusinessArea area) {
-        return repo.save(area);
+    public BusinessAreaDTO addArea(@RequestBody BusinessAreaDTO area) {
+        return service.addArea(BusinessArea.builder()
+                .name(area.getName())
+                .build());
     }
 
     @GetMapping()
     public List<BusinessArea> getAll() {
-        return repo.findAll();
+        return service.getAll();
     }
 }

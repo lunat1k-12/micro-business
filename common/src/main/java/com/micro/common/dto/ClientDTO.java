@@ -6,16 +6,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-import java.util.List;
 
 @Data
 @Builder
-@AllArgsConstructor
 @NoArgsConstructor
-public class BusinessAreaDTO implements Serializable {
-
+@AllArgsConstructor
+public class ClientDTO implements Serializable {
     private Long id;
     private String name;
-    private String description;
-    private List<ClientDTO> clients;
+    private String email;
+    private Long businessAreaId;
 }

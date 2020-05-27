@@ -1,7 +1,7 @@
 package com.micro.client.service.converter;
 
-import com.micro.client.service.dto.ClientDTO;
 import com.micro.client.service.entity.Client;
+import com.micro.common.dto.ClientDTO;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -3,6 +3,7 @@ app:
     host: business-rabbit
     exchange_name: fanout.exchange
     active_queue: business-actions-queue
+    client_queue: client-actions-queue
 spring:
   datasource:
     url: jdbc:postgresql://business-db:5432/business

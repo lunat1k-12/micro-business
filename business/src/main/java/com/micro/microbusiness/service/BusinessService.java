@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
+import static java.util.stream.Collectors.toList;
+
 @Service
 @RequiredArgsConstructor
 public class BusinessService {
@@ -29,7 +31,9 @@ public class BusinessService {
         return areaDto;
     }
 
-    public List<BusinessArea> getAll() {
-        return repo.findAll();
+    public List<BusinessAreaDTO> getAll() {
+        return repo.findAll().stream()
+                .map(converter::toDto)
+                .collect(toList());
     }
 }

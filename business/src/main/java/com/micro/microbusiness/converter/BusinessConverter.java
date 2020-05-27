@@ -12,6 +12,7 @@ public class BusinessConverter implements EntityConverter<BusinessArea, Business
         return BusinessAreaDTO.builder()
                 .id(entity.getId())
                 .name(entity.getName())
+                .description(entity.getDescription())
                 .build();
     }
 }

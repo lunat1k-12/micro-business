@@ -23,11 +23,12 @@ public class BusinessController {
     public BusinessAreaDTO addArea(@RequestBody BusinessAreaDTO area) {
         return service.addArea(BusinessArea.builder()
                 .name(area.getName())
+                .description(area.getDescription())
                 .build());
     }
 
     @GetMapping()
-    public List<BusinessArea> getAll() {
+    public List<BusinessAreaDTO> getAll() {
         return service.getAll();
     }
 }

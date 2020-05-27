@@ -1,12 +1,12 @@
 package com.micro.client.service.service;
 
 import com.micro.client.service.converter.ClientConverter;
-import com.micro.client.service.dto.ClientDTO;
 import com.micro.client.service.entity.Client;
 import com.micro.client.service.exception.ClientException;
 import com.micro.client.service.repository.ClientRepository;
 import com.micro.common.dto.AreaValidationResponse;
 import com.micro.common.dto.BusinessAreaDTO;
+import com.micro.common.dto.ClientDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Value;

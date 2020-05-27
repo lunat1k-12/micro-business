@@ -1,8 +1,8 @@
 package com.micro.client.service.controller;
 
-import com.micro.client.service.dto.ClientDTO;
 import com.micro.client.service.entity.Client;
 import com.micro.client.service.service.ClientService;
+import com.micro.common.dto.ClientDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

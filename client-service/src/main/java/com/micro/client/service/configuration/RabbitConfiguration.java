@@ -17,6 +17,9 @@ public class RabbitConfiguration {
     @Value("${app.rabbit.business_queue}")
     private String businessQueue;
 
+    @Value("${app.rabbit.active_queue}")
+    private String clientQueue;
+
     @Value("${app.rabbit.host}")
     private String rabbitHost;
 
@@ -40,6 +43,11 @@ public class RabbitConfiguration {
     @Bean
     public Queue businessQueue() {
         return new Queue(businessQueue);
+    }
+
+    @Bean
+    public Queue clientQueue() {
+        return new Queue(clientQueue);
     }
 
     @Bean

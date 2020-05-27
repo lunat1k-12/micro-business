@@ -20,7 +20,7 @@ import static java.util.stream.Collectors.toList;
 @RequiredArgsConstructor
 public class BusinessService {
 
-    @Value("${app.rabbit.business_queue}")
+    @Value("${app.rabbit.client_queue}")
     private String clientsQueue;
     private final BusinessAreaRepository repo;
     private final BusinessConverter converter;

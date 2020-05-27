@@ -7,4 +7,4 @@ CMD ["java", \
     "-XX:+HeapDumpOnOutOfMemoryError", \
     "-jar", \
     "/config-server.jar"]
-EXPOSE 8088
+EXPOSE 8888

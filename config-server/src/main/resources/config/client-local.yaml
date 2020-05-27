@@ -1,0 +1,10 @@
+app:
+  rabbit:
+    host: 192.168.1.7
+    exchange_name: fanout.exchange
+    active_queue: client-actions-queue
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.1.7:5433/client
+    username: manager
+    password: pass

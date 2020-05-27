@@ -48,13 +48,4 @@ public class RabbitConfiguration {
     public Jackson2JsonMessageConverter producerJackson2MessageConverter() {
         return new Jackson2JsonMessageConverter();
     }
-
-//    @Bean
-//    public SimpleMessageListenerContainer messageListenerContainer1(ConnectionFactory connectionFactory) {
-//        SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
-//        container.setConnectionFactory(connectionFactory);
-//        container.setQueueNames(QUEUE_NAME);
-////        container.setMessageListener(message -> log.info("received from queue1 : " + new String(message.getBody())));
-//        return container;
-//    }
 }

@@ -1,6 +1,5 @@
 package com.micro.microbusiness.service;
 
-import com.micro.common.dto.AreaValidationResponse;
 import com.micro.common.dto.BusinessAreaDTO;
 import com.micro.common.dto.ClientDTO;
 import com.micro.microbusiness.converter.BusinessConverter;

@@ -1,0 +1,10 @@
+app:
+  rabbit:
+    host: business-rabbit
+    exchange_name: fanout.exchange
+    active_queue: business-actions-queue
+spring:
+  datasource:
+    url: jdbc:postgresql://business-db:5432/business
+    username: manager
+    password: pass

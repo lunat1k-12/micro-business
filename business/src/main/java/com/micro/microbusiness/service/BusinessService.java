@@ -16,7 +16,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class BusinessService {
 
-    @Value("${business-queue}")
+    @Value("${app.rabbit.active_queue}")
     private String businessQueue;
 
     private final BusinessAreaRepository repo;

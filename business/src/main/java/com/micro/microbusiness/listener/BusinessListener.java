@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class BusinessListener {
 
-    @RabbitListener(queues = "${business-queue}")
+    @RabbitListener(queues = "${app.rabbit.active_queue}")
     public void processBusiness(BusinessAreaDTO dto) {
         log.info("Received from business: " + dto.getName());
     }

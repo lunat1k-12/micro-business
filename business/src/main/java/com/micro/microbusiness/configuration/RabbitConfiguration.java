@@ -16,10 +16,10 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class RabbitConfiguration {
 
-    @Value("${business-queue}")
+    @Value("${app.rabbit.active_queue}")
     private String businessQueue;
 
-    @Value("${rabbit-host}")
+    @Value("${app.rabbit.host}")
     private String rabbitHost;
 
     @Bean

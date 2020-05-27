@@ -6,6 +6,6 @@ app:
     business_queue: business-actions-queue
 spring:
   datasource:
-    url: jdbc:postgresql://client-db:5433/client
+    url: jdbc:postgresql://client-db:5432/client
     username: manager
     password: pass

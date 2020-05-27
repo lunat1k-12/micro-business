@@ -7,4 +7,4 @@ CMD ["java", \
     "-XX:+HeapDumpOnOutOfMemoryError", \
     "-jar", \
     "/business.jar"]
-EXPOSE 8088
+EXPOSE 8080

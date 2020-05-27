@@ -1,6 +1,6 @@
 package com.micro.microbusiness.controller;
 
-import com.micro.microbusiness.dto.BusinessAreaDTO;
+import com.micro.common.dto.BusinessAreaDTO;
 import com.micro.microbusiness.entity.BusinessArea;
 import com.micro.microbusiness.service.BusinessService;
 import lombok.RequiredArgsConstructor;

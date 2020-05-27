@@ -9,7 +9,6 @@ COPY --from=BUILD-BASE /repo/build/resources/main /resources
 #CMD "/bin/bash"
 CMD ["java", \
     "-XX:+HeapDumpOnOutOfMemoryError", \
-    "-Dspring.datasource.url=${DATABASE_URL}", \
     "-jar", \
     "/business.jar"]
 EXPOSE 8088
